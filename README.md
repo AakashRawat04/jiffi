@@ -1,71 +1,51 @@
-# jiffi README
+# Jiffi - Smart Cursor Movement
 
-This is the README for your extension "jiffi". After writing up a brief description, we recommend including the following sections.
+Jiffi is a VS Code extension that enhances cursor movement within text, making it easier to navigate through camelCase, PascalCase, and space-separated words.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Jiffi provides smart cursor movement commands that let you:
 
-For example if there is an image subfolder under your extension project workspace:
+- Jump between capital letters in camelCase/PascalCase words (e.g., `myVariableName` -> m -> V -> N)
+- Move to word boundaries intelligently
+- Navigate through space-separated words
 
-\!\[feature X\]\(images/feature-x.png\)
+### Examples:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- In camelCase: `isHelloWorld` 
+  - Pressing Ctrl+Right: i -> H -> W
+  - Pressing Ctrl+Left: W -> H -> i
+
+- In multi-word text: `isHelloWorld is hello world HelloWorld`
+  - Moves through both word starts and capital letters
+  - Handles spaces intelligently
+
+## Key Bindings
+
+- `Ctrl+Right` or `Cmd+Right` (Mac): Move to next capital letter or word start
+- `Ctrl+Left` or `Cmd+Left` (Mac): Move to previous capital letter or word start
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+No special requirements or dependencies needed.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+None at the moment.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of Jiffi:
+- Smart cursor movement through camelCase/PascalCase words
+- Intelligent word boundary detection
+- Cross-word navigation
 
 ---
 
-## Following extension guidelines
+## Source Code
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+[GitHub Repository](https://github.com/yourusername/jiffi)
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy smarter cursor movement with Jiffi!**
