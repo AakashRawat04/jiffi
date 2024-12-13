@@ -44,8 +44,4 @@ Initial release of Jiffi:
 
 ---
 
-## Source Code
-
-[GitHub Repository](https://github.com/yourusername/jiffi)
-
 **Enjoy smarter cursor movement with Jiffi!**
