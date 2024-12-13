@@ -14,8 +14,24 @@
   "contributes": {
     "commands": [
       {
-        "command": "jiffi.helloWorld",
-        "title": "Hello World"
+        "command": "jiffi.moveToNextCapital",
+        "title": "Jiffi: Move to Next Capital Letter"
+      },
+      {
+        "command": "jiffi.moveToPrevCapital",
+        "title": "Jiffi: Move to Previous Capital Letter"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "jiffi.moveToNextCapital",
+        "key": "ctrl+right",
+        "mac": "cmd+right"
+      },
+      {
+        "command": "jiffi.moveToPrevCapital",
+        "key": "ctrl+left",
+        "mac": "cmd+left"
       }
     ]
   },
