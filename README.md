@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="jiffiLogo.png" alt="Jiffi Logo">
+</p>
+
 # Jiffi - Smart Cursor Movement
 
 Jiffi is a VS Code extension that enhances cursor movement within text, making it easier to navigate through camelCase, PascalCase, and space-separated words.
